@@ -13,7 +13,7 @@
 
 
     <!-- 使用 Annotation 自动注册 Bean,SpringMVC只扫描 @Controller -->
-    <context:component-scan base-package="com.lzc.admin" use-default-filters="false">
+    <context:component-scan base-package="com.lzc" use-default-filters="false">
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
 
@@ -28,8 +28,7 @@
 
 
     <!-- swagger静态资源访问配置 -->
-    <mvc:resources mapping="swagger-ui.html" location="classpath:/META-INF/resources/" />
-    <mvc:resources mapping="/webjars/**" location="classpath:/META-INF/resources/webjars/" />
+
     <!-- 静态资源映射 -->
     <mvc:resources mapping="/static/**" location="/static/" cache-period="31536000"/>
 </beans>

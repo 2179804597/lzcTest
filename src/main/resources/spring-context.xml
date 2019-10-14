@@ -8,7 +8,7 @@
 ">
 
     <context:annotation-config />
-    <context:component-scan base-package="com.lzc.admin">
+    <context:component-scan base-package="com.lzc">
         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller" />
     </context:component-scan>
 </beans>
